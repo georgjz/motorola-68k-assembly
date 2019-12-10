@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "vasm Mi",
+  "patterns": [
+      { "include": "#empty" }
+  ],
+  "repository": {
+    "empty": {
+
+    }
+  },
+  "scopeName": "source.vasm_mot"
+}

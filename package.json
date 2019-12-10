@@ -21,7 +21,7 @@
         {
             "language": "opcodes",
             "scopeName": "source.68000opcodes",
-            "path": "./syntaxes/m68k.tmLanguage.json"
+            "path": "./syntaxes/68000opcodes.tmLanguage.json"
         }
         ]
     }

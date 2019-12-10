@@ -9,7 +9,7 @@
        "patterns": [
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(unlk|reset|nop|stop|rte|rts|trapv|rtr|jsr|jmp)\\b"
+          "match": "\\b(?i)(unlk|reset|nop|stop|rte|rts|trap(v)?|rtr|jsr|jmp)\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",

@@ -1,0 +1,25 @@
+{
+    "name": "motorola-68k-assembly",
+    "displayName": "Motorola 68k Assembly",
+    "description": "Adds syntax highlight for Motorola 68000 Assembly and its variants. Supports various assemblers and their directives.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "m68k",
+            "aliases": ["LANG NAME", "m68k"],
+            "extensions": [".s",".asm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "m68k",
+            "scopeName": "source.68000opcodes",
+            "path": "./syntaxes/m68k.tmLanguage.json"
+        }]
+    }
+}

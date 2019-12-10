@@ -1,32 +1,51 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "LANG NAME",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.m68k",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.m68k",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.m68k",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.68000opcodes"
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "68000 Opcodes",
+  "patterns": [
+      { "include": "#mnemonics" }
+  ],
+  "repository": {
+    "mnemonics": 
+    {
+       "patterns": [
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(unlk|reset|nop|stop|rte|rts|trapv|rtr|jsr|jmp)\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(abcd|nbcd|tas|s(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[b])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(link|swap|chk|(di|mul)[su])(\\.[w])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)([lp]ea|moveq|exg)(\\.[l])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(b(ra|sr))(\\.[bw])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[bws])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(b(tst|bchg|clr|set))(\\.[bl])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext)(\\.[wl])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)((e)?or(i)?|and(i)?|sub([iqx])?|add([iqx])?|cmp([mi])?|move|negx|clr|neg|not|tst|or|(as|ls|rox|ro)[lr])(\\.[bwl])?\\b"
+        }
+        ]
+    }
+  },
+  "scopeName": "source.68000opcodes"
 }

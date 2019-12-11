@@ -372,6 +372,7 @@ InitDMAQueue:
 	lea	(VDP_Command_Buffer).w,a0
 	move.b	#$94,d0
 	move.l	#$93979695,d1
+	move 	#$ff,label 
 c := 0
 	rept QueueSlotCount
 		move.b	d0,c + DMAEntry.Reg94(a0)

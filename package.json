@@ -19,15 +19,12 @@
         "languages": [
             {
                 "id": "vasmmot",
-                "aliases": [
-                    "68k Assembly (vasmm68k_mot)",
-                    "vasm"
-                ],
+                "aliases": [ "68k Assembly (vasmm68k_mot)"],
                 "extensions": [
                     ".s",
                     ".asm"
                 ],
-                "configuration": "./language-configuration.json"
+                "configuration": "./configs/vasm-mot-language-configuration.json"
             }
         ],
         "grammars": [

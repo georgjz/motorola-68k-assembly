@@ -1,12 +1,24 @@
 {
   "name": "vasm Motorola syntax",
   "patterns": [
-      { "include": "#empty" }
+      { "include": "#comments" },
+      { "include": "#expressions" },
+      { "include": "#labels" },
+      { "include": "#directives" }
   ],
   "repository": {
-    "empty": {
-
-    }
+    "comments":
+    {
+      "name": "comment.line.semicolon.vasmmot",
+      "match": ";.*$"
+    },
+    "labels": 
+    {
+      "name": "entity.name.function.vasmmot",
+      "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(\\$|\\:{0,2})"
+    },
+    "expressions": {},
+    "directives": {}
   },
-  "scopeName": "source.vasm_mot"
+  "scopeName": "source.vasmmot"
 }

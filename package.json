@@ -12,17 +12,24 @@
     "contributes": {
         "languages": [
         {
-            "id": "opcodes",
-            "aliases": ["68000 Base Opcodes"],
+            "id": "vasmmot",
+            "aliases": ["68k Assembly (vasmm68k_mot)", "vasm"],
             "extensions": [".s",".asm"],
             "configuration": "./language-configuration.json"
-        }],
+        }
+        ],
         "grammars": [
         {
-            "language": "opcodes",
-            "scopeName": "source.68000opcodes",
-            "path": "./syntaxes/m68k.tmLanguage.json"
+            "language": "vasmmot",
+            "scopeName": "source.vasmmot",
+            "path": "./syntaxes/vasm_mot.tmLanguage.json"
+        },
+        {
+            "scopeName": "opcodes.m68000",
+            "path": "./syntaxes/68000opcodes.tmLanguage.json",
+            "injectTo": ["source.vasmmot"]
         }
+
         ]
     }
 }

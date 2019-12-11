@@ -1,6 +1,6 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
   "name": "68000 Opcodes",
+  "injectionSelector": "L:source",
   "patterns": [
       { "include": "#mnemonics" }
   ],
@@ -10,7 +10,7 @@
        "patterns": [
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(unlk|reset|nop|stop|rte|rts|trapv|rtr|jsr|jmp)\\b"
+          "match": "\\b(?i)(unlk|reset|nop|stop|rte|rts|trap(v)?|rtr|jsr|jmp)\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
@@ -47,5 +47,5 @@
         ]
     }
   },
-  "scopeName": "source.68000opcodes"
+  "scopeName": "opcodes.m68000"
 }

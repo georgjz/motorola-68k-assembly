@@ -25,6 +25,15 @@
                     ".asm"
                 ],
                 "configuration": "./configs/vasm-mot-language-configuration.json"
+            },
+            {
+                "id": "vasmstd",
+                "aliases": [ "68k Assembly (vasmm68k_std)"],
+                "extensions": [
+                    ".s",
+                    ".asm"
+                ],
+                "configuration": "./configs/vasm-std-language-configuration.json"
             }
         ],
         "grammars": [
@@ -34,10 +43,16 @@
                 "path": "./syntaxes/vasm_mot.tmLanguage.json"
             },
             {
+                "language": "vasmstd",
+                "scopeName": "source.vasmstd",
+                "path": "./syntaxes/vasm_std.tmLanguage.json"
+            },
+            {
                 "scopeName": "opcodes.m68000",
                 "path": "./syntaxes/68000opcodes.tmLanguage.json",
                 "injectTo": [
-                    "source.vasmmot"
+                    "source.vasmmot",
+                    "source.vasmstd"
                 ]
             }
         ]

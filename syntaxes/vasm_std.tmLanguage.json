@@ -1,5 +1,5 @@
 {
-  "name": "vasm Motorola syntax",
+  "name": "vasm standard syntax",
   "patterns": [
     { "include": "#comments" },
     { "include": "#symbols" },
@@ -10,59 +10,67 @@
     "comments":
     {
       "name": "comment.line.vasmmot",
-      "match": "[;\\*].*$"
+      "match": "[;\\#].*$"
     },
     "symbols": 
     { 
       "patterns": [
       {
-        "name": "entity.name.function.label.vasmmot",
-        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
+        "name": "entity.name.function.label.vasmstd",
+        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=\\:)"
       },
       {
-        "name": "constant.numeric.hex.vasmmot",
-        "match": "\\-?\\$\\b[a-fA-Z0-9]+\\b"
+        "name": "entity.name.function.label.vasmstd",
+        "match": "[0-9]*(?=\\$)"
       },
       {
-        "name": "constant.numeric.binary.vasmmot",
-        "match": "\\-?\\%[01]+"
+        "name": "entity.name.function.label.vasmstd",
+        "match": "\\.[0-9]*"
       },
       {
-        "name": "constant.numeric.octal.vasmmot",
-        "match": "\\-?\\@[0-7]+"
+        "name": "constant.numeric.hex.vasmstd",
+        "match": "\\-?\\b(?i)0x[a-fA-Z0-9]+\\b"
       },
       {
-        "name": "constant.numeric.decimal.vasmmot",
+        "name": "constant.numeric.binary.vasmstd",
+        "match": "\\-?\\b(?i)0b[01]+"
+      },
+      {
+        "name": "constant.numeric.octal.vasmstd",
+        "match": "\\-?\\b0[0-7]+"
+      },
+      {
+        "name": "constant.numeric.decimal.vasmstd",
         "match": "\\b[0-9]+\\b"
       },
       {
-        "name": "variable.language.register.vasmmot",
+        "name": "variable.language.register.vasmstd",
         "match": "\\b([da][0-7]|sp|ccr|pc|sr)\\b"
       }
       ]
     },
     "operators":
     {
-      "name": "keyword.operator.vasmmot",
+      "name": "keyword.operator.vasmstd",
       "match":  "!|&|&&|\\^|\\*|\\/{1,2}|\\-|\\+|~|=(\\.[sdxp])?|<=|>=|<<|>>|<>|<|>|\\||\\|\\|"
     },
     "directives": 
     {
       "patterns": [
       {
-        "name": "support.function.pseudo.vasmmot",
-        "match": "\\b(?i)(idnt|align|(d[srx]|d(c)?b|blk)\\.[bdlqswx]|(data|code|bss)(\\_[cf])?|cargs|clr[fs]o|cnop|comm|comment|[cd]seg|(f)?equ(\\.[sdxp])?|end(r)?|erem|even|fail|inc(bin|dir|lude)|inline|list|llen|nolist|nref|nopage|odd|offset|org|output|page|plen|print[tv]|public|rem|rept|rorg|rsreset|rs\\.|rsset|section|set([fs]o)?|so\\.|spc|text|ttl|weak|xdef|xref)\\b"
+        "name": "support.function.pseudo.vasmstd",
+        "match": "\\.\\b(([248])?byte|asciiz?|abort|align|balign([lw])?|l?comm|double|endr|equ(iv)?|err|extern|fail|file|float|globl|half|inc(bin|dir|clude)|int|irpc?|list|local|long|nolist|org|p2align([lw])?|quad|rept|section|set|size|short|single|skip|space|stab[snd]|string|swbeg|type|uahalf|uaquad|uashort|uaword|weak|word|zero|bss|data|rodata|sbss|sdata|sdata2|stab|stabdtr|text|tocd)\\b"
       },
       {
-        "name": "keyword.control.conditional.vasmmot",
-        "match": "\\b(?i)(else|endif|if(eq|ne|gt|ge|lt)|(n)?[bcd]|ifmacro(n)?d|iff)\\b"
+        "name": "keyword.control.conditional.vasmstd",
+        "match": "\\.\\b(else|endif|if(eq|ne|gt|ge|lt)|(n)?[bcd]|ifmacro(n)?d|iff)\\b"
       },
       {
-        "name": "support.function.pseudo.vasmmot",
-        "match": "\\b(?i)(macro|endm|mexit)\\b"
+        "name": "support.function.pseudo.vasmstd",
+        "match": "\\.\\b(macro|endm)\\b"
       }
       ]
     }
   },
-  "scopeName": "source.vasmmot"
+  "scopeName": "source.vasmstd"
 }

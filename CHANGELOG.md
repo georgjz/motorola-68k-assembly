@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2019-Dec-11
+### Added 
+- Support for standard syntax in vasm
+
 ## [0.1.1] - 2019-Dec-11
 ### Fixed
 - `package.json` Package name corrected

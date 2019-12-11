@@ -3,6 +3,12 @@
     "displayName": "%displayName%",
     "description": "Adds syntax highlight for Motorola 68000 Assembly and its variants. Supports various assemblers and their directives.",
     "version": "0.0.1",
+    "publisher": "clcxce",
+    "icon": "m68klogo.png",
+    "repository": {
+        "url": "https://github.com/georgjz/motorola-68k-assembly",
+        "type": "git"
+    },
     "engines": {
         "vscode": "^1.40.0"
     },

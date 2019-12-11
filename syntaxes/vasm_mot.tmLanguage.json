@@ -1,23 +1,41 @@
 {
   "name": "vasm Motorola syntax",
   "patterns": [
-      { "include": "#comments" },
-      { "include": "#expressions" },
-      { "include": "#labels" },
-      { "include": "#directives" }
+    { "include": "#comments" },
+    { "include": "#symbols" },
+    { "include": "#directives" }
   ],
   "repository": {
     "comments":
     {
-      "name": "comment.line.semicolon.vasmmot",
-      "match": ";.*$"
+      "name": "comment.line.vasmmot",
+      "match": "[;\\*].*$"
     },
-    "labels": 
-    {
-      "name": "entity.name.function.vasmmot",
-      "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(\\$|\\:{0,2})"
+    "symbols": 
+    { 
+      "patterns": [
+      {
+        "name": "entity.name.function.vasmmot",
+        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(\\$|\\:{0,2})"
+      },
+      {
+        "name": "constant.numeric.hex.vasmmot",
+        "match": "\\-?\\$\\b[a-fA-Z0-9]+\\b"
+      },
+      {
+        "name": "constant.numeric.binary.vasmmot",
+        "match": "\\%[01]+"
+      },
+      {
+        "name": "constant.numeric.octal.vasmmot",
+        "match": "\\@[0-7]+"
+      },
+      {
+        "name": "constant.numeric.decimal.vasmmot",
+        "match": "\\b[0-9]+\\b"
+      }
+      ]
     },
-    "expressions": {},
     "directives": {}
   },
   "scopeName": "source.vasmmot"

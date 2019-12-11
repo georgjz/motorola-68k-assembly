@@ -1,6 +1,6 @@
 {
   "name": "68000 Opcodes",
-  "injectionSelector": "L:source.vasmmot",
+  "injectionSelector": "L:source",
   "patterns": [
       { "include": "#mnemonics" }
   ],

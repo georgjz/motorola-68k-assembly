@@ -4,11 +4,12 @@ This is a Language Extension for [Visual Studio Code][vsc]. It adds syntax highl
 
 ## Supported Assemblers 
 
-Currently, this extension supports the following assemblers:
+Currently, this extension supports the following assemblers. In general, the grammar's name takes the form of "68k Assembly (assembler name)":
 - [vasm][vsm]
+    - `vasmm68k_mot`: [Mot Syntax Module][vasmmot], the grammar is called "68k Assembly (vasmm68k_mot)"
+    - `vasmm68k_std`: [Standard Syntax Module][vasmstd], the grammar is called "68k Assembly (vasmm68k_std)"
 
 Planned support for:
-- vasm standard syntax
 - m68k-elf-as 
 - SNASM2
 - Sierra 68000 Assembler 
@@ -31,11 +32,17 @@ If you find a bug or error, please submit an issue to this repository. A screens
 
 ## Release Notes
 
+### 0.2.0
+
+Add support for [vasmm68k_std assembler][vasmstd].
+
 ### 0.1.0
 
 Initial release. Only supports [vasm][vsm].
 
 
 [vsm]: http://sun.hasenbraten.de/vasm/
+[vasmmot]: http://sun.hasenbraten.de/vasm/release/vasm.html
+[vasmstd]: http://sun.hasenbraten.de/vasm/release/vasm.html
 [vsc]: https://code.visualstudio.com
 [mot]: https://en.wikipedia.org/wiki/Motorola_68000

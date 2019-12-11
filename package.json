@@ -1,6 +1,6 @@
 {
     "name": "motorola-68k-assembly",
-    "displayName": "%displayName%",
+    "displayName": "Motorola 68000 Assembly Extension",
     "description": "Adds syntax highlight for Motorola 68000 Assembly and its variants. Supports various assemblers and their directives.",
     "version": "0.1.0",
     "publisher": "clcxce",

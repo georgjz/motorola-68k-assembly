@@ -49,6 +49,7 @@
         "name": "support.function.pseudo.vasmmot",
         "match": "\\b(?i)(idnt|align|(d[srx]|d(c)?b|blk)\\.[bdlqswx]|(data|code|bss)(\\_[cf])?|cargs|clr[fs]o|cnop|comm|comment|[cd]seg|(f)?equ(\\.[sdxp])?|end(r)?|erem|even|fail|inc(bin|dir|lude)|inline|list|llen|nolist|nref|nopage|odd|offset|org|output|page|plen|print[tv]|public|rem|rept|rorg|rsreset|rs\\.|rsset|section|set([fs]o)?|so\\.|spc|text|ttl|weak|xdef|xref)\\b"
       },
+      // TODO: Le culprit!
       {
         "name": "keyword.control.conditional.vasmmot",
         "match": "\\b(?i)(else|endif|if(eq|ne|gt|ge|lt|(n)?[bcd]|ifmacro(n)?d|iff)\\b"

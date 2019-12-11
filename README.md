@@ -23,6 +23,8 @@ This is not a complete list. If you have a wish or suggestion, please use the is
 - Code snippets 
 - 
 
+Please feel free to submit an issue to make a suggestion. They're greatly appreciated.
+
 ## Known Issues / Bugs
 
 If you find a bug or error, please submit an issue to this repository. A screenshot and informations about your system (OS, VS code version) will help a lot.

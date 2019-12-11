@@ -3,6 +3,7 @@
   "patterns": [
     { "include": "#comments" },
     { "include": "#symbols" },
+    { "include": "#operators" },
     { "include": "#directives" }
   ],
   "repository": {
@@ -15,8 +16,8 @@
     { 
       "patterns": [
       {
-        "name": "entity.name.function.vasmmot",
-        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(\\$|\\:{0,2})"
+        "name": "entity.name.function.label.vasmmot",
+        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
       },
       {
         "name": "constant.numeric.hex.vasmmot",
@@ -24,11 +25,11 @@
       },
       {
         "name": "constant.numeric.binary.vasmmot",
-        "match": "\\%[01]+"
+        "match": "\\-?\\%[01]+"
       },
       {
         "name": "constant.numeric.octal.vasmmot",
-        "match": "\\@[0-7]+"
+        "match": "\\-?\\@[0-7]+"
       },
       {
         "name": "constant.numeric.decimal.vasmmot",
@@ -36,7 +37,28 @@
       }
       ]
     },
-    "directives": {}
+    "operators":
+    {
+      "name": "keyword.operator.vasmmot",
+      "match":  "!|&|&&|\\^|\\*|\\/{1,2}|\\-|\\+|~|=(\\.[sdxp])?|<=|>=|<<|>>|<>|<|>|\\||\\|\\|"
+    },
+    "directives": 
+    {
+      "patterns": [
+      {
+        "name": "support.function.pseudo.vasmmot",
+        "match": "\\b(?i)(idnt|align|(d[srx]|d(c)?b|blk)\\.[bdlqswx]|(data|code|bss)(\\_[cf])?|cargs|clr[fs]o|cnop|comm|comment|[cd]seg|(f)?equ(\\.[sdxp])?|end(r)?|erem|even|fail|inc(bin|dir|lude)|inline|list|llen|nolist|nref|nopage|odd|offset|org|output|page|plen|print[tv]|public|rem|rept|rorg|rsreset|rs\\.|rsset|section|set([fs]o)?|so\\.|spc|text|ttl|weak|xdef|xref)\\b"
+      },
+      {
+        "name": "keyword.control.conditional.vasmmot",
+        "match": "\\b(?i)(else|endif|if(eq|ne|gt|ge|lt|(n)?[bcd]|ifmacro(n)?d|iff)\\b"
+      },
+      {
+        "name": "support.function.pseudo.vasmmot",
+        "match": "\\b(?i)(macro|endm|mexit)\\b"
+      }
+      ]
+    }
   },
   "scopeName": "source.vasmmot"
 }

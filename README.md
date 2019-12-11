@@ -1,65 +1,39 @@
-# motorola-68k-assembly README
+# Motorola 68000 Assembly Language Extension for VS Code
 
-This is the README for your extension "motorola-68k-assembly". After writing up a brief description, we recommend including the following sections.
+This is a Language Extension for [Visual Studio Code][vsc]. It adds syntax highlighting for the [Motorola 68000][mot] and its variants.
 
-## Features
+## Supported Assemblers 
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Currently, this extension supports the following assemblers:
+- [vasm][vsm]
 
-For example if there is an image subfolder under your extension project workspace:
+Planned support for:
+- vasm standard syntax
+- m68k-elf-as 
+- SNASM2
+- Sierra 68000 Assembler 
 
-\!\[feature X\]\(images/feature-x.png\)
+This is not a complete list. If you have a wish or suggestion, please use the issue function of this repository to submit an assembler. If you provide a link to its documentation, that will speed things up.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+## Planned Features
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- Some kind of linter that will check for errors for the chosen assembler
+- Customization options 
+- Code snippets 
+- 
 
-## Extension Settings
+## Known Issues / Bugs
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+If you find a bug or error, please submit an issue to this repository. A screenshot and informations about your system (OS, VS code version) will help a lot.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.1.0
 
-### 1.0.0
+Initial release. Only supports [vasm][vsm].
 
-Initial release of ...
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+[vsm]: http://sun.hasenbraten.de/vasm/
+[vsc]: https://code.visualstudio.com
+[mot]: https://en.wikipedia.org/wiki/Motorola_68000

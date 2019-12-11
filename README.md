@@ -14,21 +14,21 @@ Planned support for:
 - SNASM2
 - Sierra 68000 Assembler 
 
-This is not a complete list. If you have a wish or suggestion, please use the issue function of this repository to submit an assembler. If you provide a link to its documentation, that will speed things up.
+This is not a complete list. If you have a wish or suggestion, please use the [issue function][iss] of the GitHub repository to submit an assembler. If you provide a link to its documentation, that will speed things up.
 
 
 ## Planned Features
 
 - Some kind of linter that will check for errors for the chosen assembler
-- Customization options 
-- Code snippets 
-- 
+- Customization options for comments (think, `;` vs `*` vs `#`)
+- Common snippets/macros for faster coding
+- A Z80 assembly injection for Sega Genesis/Mega Drive programming
 
-Please feel free to submit an issue to make a suggestion. They're greatly appreciated.
+Please feel free to submit an [issue][iss] to make a suggestion. They're greatly appreciated.
 
 ## Known Issues / Bugs
 
-If you find a bug or error, please submit an issue to this repository. A screenshot and informations about your system (OS, VS code version) will help a lot.
+If you find a bug or error, please submit an [issue][iss] to this repository. A screenshot and informations about your system (OS, VS code version) will help a lot.
 
 ## Release Notes
 
@@ -46,3 +46,4 @@ Initial release. Only supports [vasm][vsm].
 [vasmstd]: http://sun.hasenbraten.de/vasm/release/vasm.html
 [vsc]: https://code.visualstudio.com
 [mot]: https://en.wikipedia.org/wiki/Motorola_68000
+[iss]: https://github.com/georgjz/motorola-68k-assembly/issues

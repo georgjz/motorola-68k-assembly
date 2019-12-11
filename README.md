@@ -28,6 +28,10 @@ Please feel free to submit an [issue][iss] to make a suggestion. They're greatly
 
 ## Known Issues / Bugs
 
+### VASM 
+
+- The assembler directives from the m68k CPU modules are missing
+
 If you find a bug or error, please submit an [issue][iss] to this repository. A screenshot and informations about your system (OS, VS code version) will help a lot.
 
 ## Release Notes

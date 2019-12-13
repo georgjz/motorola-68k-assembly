@@ -63,7 +63,7 @@
       "patterns": [
       {
         "name": "support.function.pseudo.vasmmot",
-        "match": "\\b(?i)(idnt|align|(d[srx]|d(c)?b|blk)\\.[bdlqswx]|(data|code|bss)(\\_[cf])?|cargs|clr[fs]o|cnop|comm|comment|[cd]seg|(f)?equ(\\.[sdxp])?|end(r)?|erem|even|fail|inc(bin|dir|lude)|inline|list|llen|nolist|nref|nopage|odd|offset|org|output|page|plen|print[tv]|public|rem|rept|rorg|rsreset|rs\\.|rsset|section|set([fs]o)?|so\\.|spc|text|ttl|weak|xdef|xref)\\b"
+        "match": "\\b(?i)(idnt|align|(d[srx]|dcb?|blk)\\.[bdlqswx]|(data|code|bss)(\\_[cf])?|cargs|clr[fs]o|cnop|comm|comment|[cd]seg|(f)?equ(\\.[sdxp])?|end(r)?|erem|even|fail|inc(bin|dir|lude)|inline|list|llen|nolist|nref|nopage|odd|offset|org|output|page|plen|print[tv]|public|rem|rept|rorg|rsreset|rs\\.|rsset|section|set([fs]o)?|so\\.|spc|text|ttl|weak|xdef|xref)\\b"
       },
       {
         "name": "keyword.control.conditional.vasmmot",

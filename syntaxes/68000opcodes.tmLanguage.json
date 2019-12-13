@@ -26,11 +26,11 @@
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(b(ra|sr))(\\.[bw])?\\b"
+          "match": "\\b(?i)(d?b(ra|sr))(\\.[bw])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[bws])?\\b"
+          "match": "\\b(?i)(d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[bws])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",

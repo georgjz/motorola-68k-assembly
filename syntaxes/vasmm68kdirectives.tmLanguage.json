@@ -1,0 +1,19 @@
+{
+  "name": "vasm m68k directives",
+  "injectionSelector": "L:source",
+  "patterns": [
+      { "include": "#directives" }
+  ],
+  "repository": {
+    "directives": 
+    {
+       "patterns": [
+        {
+          "name": "support.function.pseudo.vasmm68kdirectives",
+          "match": "\\b(?i)(\\.sdreg|basereg|cpu32|endb|far|fpu|initnear|machine|mc680[012346]0|ac68080|near|opt|equrl?|fequrl?|f?reg)\\b"
+        }
+        ]
+    }
+  },
+  "scopeName": "directives.vasmm68kdirectives"
+}

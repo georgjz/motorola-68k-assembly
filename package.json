@@ -58,6 +58,14 @@
                     "source.vasmmot",
                     "source.vasmstd"
                 ]
+            },
+            {
+                "scopeName": "directives.vasmm68kdirectives",
+                "path": "./syntaxes/vasmm68kdirectives.tmLanguage.json",
+                "injectTo": [
+                    "source.vasmmot",
+                    "source.vasmstd"
+                ]
             }
         ]
     }

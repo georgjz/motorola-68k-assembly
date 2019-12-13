@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.2.3] - 2019-Dec-13
+### Fixed 
+- Small error where `dc` directives weren't highlighted correctly
+
 ## [0.2.1] - 2019-Dec-13
 ### Added 
 - m68k directives added to vasm grammars

@@ -34,6 +34,8 @@ If you find a bug or error, please submit an [issue][iss] to this repository. A 
 
 ## Release Notes
 
+For more detailed changes, see `CHANGELOG.md`.
+
 ### 0.2.1 
 
 Add m68k module directives to vasm grammars. Fix strings and escape command hightlighting in same grammars.

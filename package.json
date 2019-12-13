@@ -1,72 +1,72 @@
 {
-    "name": "motorola-68k-assembly",
-    "displayName": "Motorola 68000 Assembly Extension",
-    "description": "Adds syntax highlight for Motorola 68000 Assembly and its variants. Supports various assemblers and their directives.",
-    "version": "0.2.0",
-    "publisher": "clcxce",
-    "icon": "m68klogo.png",
-    "repository": {
-        "url": "https://github.com/georgjz/motorola-68k-assembly",
-        "type": "git"
-    },
-    "engines": {
-        "vscode": "^1.40.0"
-    },
-    "categories": [
-        "Programming Languages"
+  "name": "motorola-68k-assembly",
+  "displayName": "Motorola 68000 Assembly Extension",
+  "description": "Adds syntax highlight for Motorola 68000 Assembly and its variants. Supports various assemblers and their directives.",
+  "version": "0.2.1",
+  "publisher": "clcxce",
+  "icon": "m68klogo.png",
+  "repository": {
+    "url": "https://github.com/georgjz/motorola-68k-assembly",
+    "type": "git"
+  },
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "vasmmot",
+        "aliases": [
+          "68k Assembly (vasmm68k_mot)"
+        ],
+        "extensions": [
+          ".s",
+          ".asm"
+        ],
+        "configuration": "./configs/vasm-mot-language-configuration.json"
+      },
+      {
+        "id": "vasmstd",
+        "aliases": [
+          "68k Assembly (vasmm68k_std)"
+        ],
+        "extensions": [
+          ".s",
+          ".asm"
+        ],
+        "configuration": "./configs/vasm-std-language-configuration.json"
+      }
     ],
-    "contributes": {
-      "languages": [
-        {
-          "id": "vasmmot",
-          "aliases": [
-            "68k Assembly (vasmm68k_mot)"
-          ],
-          "extensions": [
-            ".s",
-            ".asm"
-          ],
-          "configuration": "./configs/vasm-mot-language-configuration.json"
-        },
-        {
-          "id": "vasmstd",
-          "aliases": [
-            "68k Assembly (vasmm68k_std)"
-          ],
-          "extensions": [
-            ".s",
-            ".asm"
-          ],
-          "configuration": "./configs/vasm-std-language-configuration.json"
-        }
-      ],
-      "grammars": [
-        {
-          "language": "vasmmot",
-          "scopeName": "source.vasmmot",
-          "path": "./syntaxes/vasm_mot.tmLanguage.json"
-        },
-        {
-          "language": "vasmstd",
-          "scopeName": "source.vasmstd",
-          "path": "./syntaxes/vasm_std.tmLanguage.json"
-        },
-        {
-          "scopeName": "opcodes.m68000",
-          "path": "./syntaxes/68000opcodes.tmLanguage.json",
-            "injectTo": [
-              "source.vasmmot",
-              "source.vasmstd"
-          ]
-        },
-        {
-          "scopeName": "directives.vasmm68kdirectives",
-          "path": "./syntaxes/vasmm68kdirectives.tmLanguage.json",
-          "injectTo": [
-            "source.vasmmot",
-            "source.vasmstd"
-          ]
-        }
+    "grammars": [
+      {
+        "language": "vasmmot",
+        "scopeName": "source.vasmmot",
+        "path": "./syntaxes/vasm_mot.tmLanguage.json"
+      },
+      {
+        "language": "vasmstd",
+        "scopeName": "source.vasmstd",
+        "path": "./syntaxes/vasm_std.tmLanguage.json"
+      },
+      {
+        "scopeName": "opcodes.m68000",
+        "path": "./syntaxes/68000opcodes.tmLanguage.json",
+        "injectTo": [
+          "source.vasmmot",
+          "source.vasmstd"
+        ]
+      },
+      {
+        "scopeName": "directives.vasmm68kdirectives",
+        "path": "./syntaxes/vasmm68kdirectives.tmLanguage.json",
+        "injectTo": [
+          "source.vasmmot",
+          "source.vasmstd"
+        ]
+      }
     ]
   }
 }

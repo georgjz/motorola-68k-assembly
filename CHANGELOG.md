@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.2.1] - 2019-Dec-13
+### Added 
+- m68k directives added to vasm grammars
+### Fixed 
+- Strings and escape sequences in the vasm grammars are now highlighted correctly 
+
 ## [0.2.0] - 2019-Dec-11
 ### Added 
 - Support for standard syntax in vasm

@@ -2,6 +2,7 @@
   "name": "vasm standard syntax",
   "patterns": [
     { "include": "#comments" },
+    { "include": "#strings" },
     { "include": "#symbols" },
     { "include": "#operators" },
     { "include": "#directives" }
@@ -12,6 +13,17 @@
       "name": "comment.line.vasmmot",
       "match": "[;\\#].*$"
     },
+    "strings": {
+			"name": "string.quoted.double.vasmmot",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.vasmmot",
+					"match": "\\\\."
+				}
+			]
+		},
     "symbols": 
     { 
       "patterns": [

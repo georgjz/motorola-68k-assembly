@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.2.4] - 2019-Dec-16
+### Fixed 
+- All registers are now highlighted correctly
+
 ## [0.2.3] - 2019-Dec-13
 ### Fixed 
 - Test decrement opcodes now highlighted correctly 

@@ -57,7 +57,7 @@
       },
       {
         "name": "variable.language.register.vasmstd",
-        "match": "\\b([da][0-7]|sp|ccr|pc|sr)\\b"
+        "match": "\\b([da][0-7]|u?sp|ccr|pc|sr)\\b"
       }
       ]
     },

@@ -1,0 +1,55 @@
+{
+  "name": "68000 Opcodes",
+  "injectionSelector": "L:source",
+  "patterns": [
+      { "include": "#mnemonics" }
+  ],
+  "repository": {
+    "mnemonics": 
+    {
+       "patterns": [
+        {
+          "name": "keyword.mnemonic.coldfire.coldfireopcodes",
+          "match": "\\b(?i)(fdmove)(\\.d)?"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(unlk|reset|nop|stop|rte|rts|trap(v)?|rtr|jsr|jmp)\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(abcd|nbcd|tas|s(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[b])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(link|swap|chk|(di|mul)[su])(\\.[w])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)([lp]ea|moveq|exg)(\\.[l])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(d?b(ra|sr))(\\.[bw])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[bws])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(b(tst|bchg|clr|set))(\\.[bl])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext)(\\.[wl])?\\b"
+        },
+        {
+          "name": "keyword.mnemonic.68000.68000opcodes",
+          "match": "\\b(?i)((e)?or(i)?|and(i)?|sub([iqx])?|add([iqx])?|cmp([mi])?|move|negx|clr|neg|not|tst|or|(as|ls|rox|ro)[lr])(\\.[bwl])?\\b"
+        }
+        ]
+    }
+  },
+  "scopeName": "opcodes.m68000"
+}

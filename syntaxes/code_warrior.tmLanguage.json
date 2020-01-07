@@ -29,15 +29,7 @@
       "patterns": [
       {
         "name": "entity.name.function.label.codewarrior",
-        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=\\:)"
-      },
-      {
-        "name": "entity.name.function.label.codewarrior",
-        "match": "[0-9]*(?=\\$)"
-      },
-      {
-        "name": "entity.name.function.label.codewarrior",
-        "match": "\\.[0-9]*"
+        "match": "^[A-Za-z][A-Za-z0-9_]*(?=\\:)"
       },
       {
         "name": "constant.numeric.hex.codewarrior",
@@ -71,7 +63,7 @@
       "patterns": [
       {
         "name": "support.function.pseudo.codewarrior",
-        "match": "\\.\\b(([248])?byte|asciiz?|abort|align|balign([lw])?|l?comm|double|endr|equ(iv)?|err|extern|fail|file|float|globl|half|inc(bin|dir|clude)|int|irpc?|list|local|long|nolist|org|p2align([lw])?|quad|rept|section|set|size|short|single|skip|space|stab[snd]|string|swbeg|type|uahalf|uaquad|uashort|uaword|weak|word|zero|bss|data|rodata|sbss|sdata|sdata2|stab|stabdtr|text|tocd)\\b"
+        "match": "\\.\\b(s?bss2?|(ro)?data|sdata[02]?|debug|offset|previous|section|text|extern|global|public|(text)?equ|set|asci[iz]|byte|double|float|long|short|space|align|endian|error|include|option|org|pragma|file|function|line|size|type)\\b"
       },
       {
         "name": "keyword.control.conditional.codewarrior",

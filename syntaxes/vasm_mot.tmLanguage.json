@@ -49,7 +49,7 @@
       },
       {
         "name": "variable.language.register.vasmmot",
-        "match": "\\b([da][0-7]|u?sp|ccr|pc|sr)\\b"
+        "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
       }
       ]
     },

@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.2.8] - 2020-Jan-07 
+### Fixed 
+- Issue #1; register names in the vasm grammars are now highlighted case-insensitively
+
 ## [0.2.7] - 2020-Jan-07 
 ### Fixed
 - CHANGELOG versioning error 

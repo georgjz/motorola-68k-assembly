@@ -1,5 +1,5 @@
 {
-  "name": "68000 Opcodes",
+  "name": "Coldfire Opcodes",
   "injectionSelector": "L:source",
   "patterns": [
       { "include": "#mnemonics" }

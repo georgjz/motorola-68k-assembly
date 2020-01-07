@@ -38,6 +38,17 @@
           ".asm"
         ],
         "configuration": "./configs/vasm-std-language-configuration.json"
+      },
+      {
+        "id": "codewarrior",
+        "aliases": [
+          "ColdFire Assembly (CodeWarrior)"
+        ],
+        "extensions": [
+          ".s",
+          ".asm"
+        ],
+        "configuration": "./configs/vasm-mot-language-configuration.json"
       }
     ],
     "grammars": [
@@ -52,11 +63,24 @@
         "path": "./syntaxes/vasm_std.tmLanguage.json"
       },
       {
+        "language": "codewarrior",
+        "scopeName": "source.codewarrior",
+        "path": "./syntaxes/code_warrior.tmLanguage.json"
+      },
+      {
         "scopeName": "opcodes.m68000",
         "path": "./syntaxes/68000opcodes.tmLanguage.json",
         "injectTo": [
           "source.vasmmot",
-          "source.vasmstd"
+          "source.vasmstd",
+          "source.codewarrior"
+        ]
+      },
+      {
+        "scopeName": "opcodes.coldfire",
+        "path": "./syntaxes/coldfireopcodes.tmLanguage.json",
+        "injectTo": [
+          "source.codewarrior"
         ]
       },
       {

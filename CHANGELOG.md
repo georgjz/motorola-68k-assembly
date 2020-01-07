@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 
-## [2.5.1] - 2020-Jan-07 
+## [0.2.7] - 2020-Jan-07 
+### Fixed
+- CHANGELOG versioning error 
+
+## [0.2.6] - 2020-Jan-07 
 ### Fixed 
 - Minus signs before binary numbers are no longer highlighted 
 

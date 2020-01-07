@@ -10,46 +10,50 @@
        "patterns": [
         {
           "name": "keyword.mnemonic.coldfire.coldfireopcodes",
-          "match": "\\b(?i)(fdmove)(\\.d)?"
+          "match": "\\b(?i)(fdmove|fmovem)(\\.d)?"
+        },
+        {
+          "name": "keyword.mnemonic.coldfire.coldfireopcodes",
+          "match": "\\b(?i)(fmove|fsmove)(\\.[bwlsd])?"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(unlk|reset|nop|stop|rte|rts|trap(v)?|rtr|jsr|jmp)\\b"
+          "match": "\\b(?i)(unlk)\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(abcd|nbcd|tas|s(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[b])?\\b"
+          "match": "\\b(?i)(moveq)(\\.[b])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(link|swap|chk|(di|mul)[su])(\\.[w])?\\b"
+          "match": "\\b(?i)(link)(\\.[w])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)([lp]ea|moveq|exg)(\\.[l])?\\b"
+          "match": "\\b(?i)([pl]ea|mov3q|movclr|movem)(\\.[l])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(d?b(ra|sr))(\\.[bw])?\\b"
+          "match": "\\b(?i)(mv[sz])(\\.[bw])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[bws])?\\b"
+          "match": "\\b(?i)()(\\.[bws])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(b(tst|bchg|clr|set))(\\.[bl])?\\b"
+          "match": "\\b(?i)()(\\.[bl])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext)(\\.[wl])?\\b"
+          "match": "\\b(?i)(movea)(\\.[wl])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.68000opcodes",
-          "match": "\\b(?i)((e)?or(i)?|and(i)?|sub([iqx])?|add([iqx])?|cmp([mi])?|move|negx|clr|neg|not|tst|or|(as|ls|rox|ro)[lr])(\\.[bwl])?\\b"
+          "match": "\\b(?i)(move)(\\.[bwl])?\\b"
         }
         ]
     }
   },
-  "scopeName": "opcodes.m68000"
+  "scopeName": "opcodes.coldfire"
 }

@@ -1,3 +1,5 @@
 # debug directory
 .vscode/
-Test.s
+
+# test files
+testfiles/

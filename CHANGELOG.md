@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [2.5.1] - 2020-Jan-07 
+### Fixed 
+- Minus signs before binary numbers are no longer highlighted 
+
 ## [0.2.4] - 2019-Dec-16
 ### Fixed 
 - All registers are now highlighted correctly

@@ -28,7 +28,7 @@ Please feel free to submit an [issue][iss] to make a suggestion. They're greatly
 
 ## Known Issues / Bugs
 
-- None at the moment 
+- Grammars that uses `*` to mark comments: Arithmetic expressions (e.g., `4 + 6 * 8`), that include `*` as an operator, are wrongly marked as comments. 
 
 If you find a bug or error, please submit an [issue][iss] to this repository. A screenshot and informations about your system (OS, VS code version) will help a lot.
 

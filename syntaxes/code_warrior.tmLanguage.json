@@ -8,10 +8,10 @@
     { "include": "#directives" }
   ],
   "repository": {
-    "comments":
+    "comments": 
     {
       "name": "comment.line.codewarrior",
-      "match": ";.*$"
+      "match": "[\\;\\#\\*(\\-\\-)(\\/\\/)].*$"
     },
     "strings": {
 			"name": "string.quoted.double.codewarrior",
@@ -29,19 +29,15 @@
       "patterns": [
       {
         "name": "entity.name.function.label.codewarrior",
-        "match": "^[A-Za-z][A-Za-z0-9_]*(?=\\:)"
+        "match": "[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
       },
       {
         "name": "constant.numeric.hex.codewarrior",
-        "match": "\\-?\\b(?i)0x[a-fA-Z0-9]+\\b"
+        "match": "\\-?\\b(0x|\\$)[a-fA-Z0-9]+\\b"
       },
       {
         "name": "constant.numeric.binary.codewarrior",
-        "match": "\\-?\\b(?i)0b[01]+"
-      },
-      {
-        "name": "constant.numeric.octal.codewarrior",
-        "match": "\\-?\\b0[0-7]+"
+        "match": "\\b(0b|\\%)[01]+"
       },
       {
         "name": "constant.numeric.decimal.codewarrior",
@@ -63,15 +59,15 @@
       "patterns": [
       {
         "name": "support.function.pseudo.codewarrior",
-        "match": "\\.\\b(s?bss2?|(ro)?data|sdata[02]?|debug|offset|previous|section|text|extern|global|public|(text)?equ|set|asci[iz]|byte|double|float|long|short|space|align|endian|error|include|option|org|pragma|file|function|line|size|type)\\b"
+        "match": "\\.\\b(?i)(s?bss2?|(ro)?data|sdata[02]?|debug|offset|previous|section|text|extern|global|public|(text)?equ|set|asci[iz]|byte|double|float|long|short|space|align|endian|error|include|option|org|pragma|file|function|line|size|type)\\b"
       },
       {
         "name": "keyword.control.conditional.codewarrior",
-        "match": "\\.\\b(else(if)?|endif|if(n?c|n?def|eq|ne|gt|ge|lt|le))\\b"
+        "match": "\\.\\b(?i)(else(if)?|endif|if(n?c|n?def|eq|ne|gt|ge|lt|le))\\b"
       },
       {
         "name": "support.function.pseudo.codewarrior",
-        "match": "\\.\\b(macro|endm|mexit)\\b"
+        "match": "\\.\\b(?i)(macro|endm|mexit)\\b"
       }
       ]
     }

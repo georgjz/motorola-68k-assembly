@@ -15,60 +15,53 @@
     },
     "strings": 
     {
-			"name": "string.quoted.double.codewarrior",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.codewarrior",
-					"match": "\\\\."
-				}
-			]
-		},
+
+    },
     "symbols": 
     { 
       "patterns": [
-      {
-        "name": "entity.name.function.label.codewarrior",
-        "match": "[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
-      },
-      {
-        "name": "constant.numeric.hex.codewarrior",
-        "match": "\\-?\\b(0x|\\$)[a-fA-Z0-9]+\\b"
-      },
-      {
-        "name": "constant.numeric.binary.codewarrior",
-        "match": "\\b(0b|\\%)[01]+"
-      },
-      {
-        "name": "constant.numeric.decimal.codewarrior",
-        "match": "\\b[0-9]+\\b"
-      },
-      {
-        "name": "variable.language.register.codewarrior",
-        "match": "\\b([da][0-7]|u?sp|ccr|pc|sr)\\b"
-      }
+        {
+          "name": "entity.name.function.label.codewarrior",
+          "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
+        },
+        {
+          "name": "constant.numeric.hex.codewarrior",
+          "match": "\\-?\\$\\b[a-fA-Z0-9]+\\b"
+        },
+        {
+          "name": "constant.numeric.hex.codewarrior",
+          "match": "\\-?\\b0x[a-fA-Z0-9]+\\b"
+        },
+        {
+          "name": "constant.numeric.binary.codewarrior",
+          "match": "\\-?\\%[01]+"
+        },
+        {
+          "name": "constant.numeric.octal.codewarrior",
+          "match": "\\-?\\@[0-7]+"
+        },
+        {
+          "name": "constant.numeric.decimal.codewarrior",
+          "match": "\\b[0-9]+\\b"
+        },
+        {
+          "name": "variable.language.register.codewarrior",
+          "match": "\\b([da][0-7]|u?sp|ccr|pc|sr)\\b"
+        }
       ]
     },
     "operators":
     {
-      "name": "keyword.operator.codewarrior",
-      "match":  "!|&|&&|\\^|\\*|\\/{1,2}|\\-|\\+|~|=(\\.[sdxp])?|<=|>=|<<|>>|<>|<|>|\\||\\|\\|"
+
     },
     "directives": 
     {
       "patterns": [
       {
-        "name": "support.function.pseudo.codewarrior",
-        "match": "\\.\\b(?i)(s?bss2?|(ro)?data|sdata[02]?|debug|offset|previous|section|text|extern|global|public|(text)?equ|set|asci[iz]|byte|double|float|long|short|space|align|endian|error|include|option|org|pragma|file|function|line|size|type)\\b"
       },
       {
-        "name": "keyword.control.conditional.codewarrior",
-        "match": "\\.\\b(?i)(else(if)?|endif|if(n?c|n?def|eq|ne|gt|ge|lt|le))\\b"
       },
       {
-        "name": "support.function.pseudo.codewarrior",
-        "match": "\\.\\b(?i)(macro|endm|mexit)\\b"
       }
       ]
     }

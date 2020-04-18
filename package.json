@@ -72,8 +72,7 @@
         "path": "./syntaxes/68000opcodes.tmLanguage.json",
         "injectTo": [
           "source.vasmmot",
-          "source.vasmstd",
-          "source.codewarrior"
+          "source.vasmstd"
         ]
       },
       {

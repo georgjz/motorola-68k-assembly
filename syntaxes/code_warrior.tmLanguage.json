@@ -13,7 +13,8 @@
       "name": "comment.line.codewarrior",
       "match": "[\\;\\#\\*(\\-\\-)(\\/\\/)].*$"
     },
-    "strings": {
+    "strings": 
+    {
 			"name": "string.quoted.double.codewarrior",
 			"begin": "\"",
 			"end": "\"",

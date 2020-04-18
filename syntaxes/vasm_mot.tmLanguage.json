@@ -13,7 +13,8 @@
       "name": "comment.line.vasmmot",
       "match": "[;\\*].*$"
     },
-    "strings": {
+    "strings": 
+    {
 			"name": "string.quoted.double.vasmmot",
 			"begin": "\"",
 			"end": "\"",

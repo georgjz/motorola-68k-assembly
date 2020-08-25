@@ -34,7 +34,7 @@
       },
       {
         "name": "constant.numeric.hex.vasmmot",
-        "match": "\\-?\\$\\b[a-fA-Z0-9]+\\b"
+        "match": "\\-?\\$\\b[a-fA-F0-9]+\\b"
       },
       {
         "name": "constant.numeric.binary.vasmmot",

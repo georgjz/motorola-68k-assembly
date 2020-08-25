@@ -42,7 +42,7 @@
       },
       {
         "name": "constant.numeric.hex.vasmstd",
-        "match": "\\-?\\b(?i)0x[a-fA-Z0-9]+\\b"
+        "match": "\\-?\\b0x[a-fA-F0-9]+\\b"
       },
       {
         "name": "constant.numeric.binary.vasmstd",

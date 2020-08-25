@@ -35,11 +35,11 @@
       },
       {
         "name": "constant.numeric.hex.codewarrior",
-        "match": "\\-?\\b(?i)0x[a-fA-F0-9]+\\b"
+        "match": "\\-?\\b0x[a-fA-F0-9]+\\b"
       },
       {
         "name": "constant.numeric.hex.codewarrior",
-        "match": "\\-?\\b(?i)0[a-fA-F0-9]+h\\b"
+        "match": "\\-?\\b0[a-fA-F0-9]+h\\b"
       },
       {
         "name": "constant.numeric.binary.codewarrior",

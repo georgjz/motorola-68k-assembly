@@ -118,14 +118,6 @@
         },
         {
           "name": "keyword.mnemonic.codewarrior",
-          "match": "\\b(?i)()(\\.[bws])?\\b"
-        },
-        {
-          "name": "keyword.mnemonic.codewarrior",
-          "match": "\\b(?i)()(\\.[bl])?\\b"
-        },
-        {
-          "name": "keyword.mnemonic.codewarrior",
           "match": "\\b(?i)(movea)(\\.[wl])?\\b"
         },
         {

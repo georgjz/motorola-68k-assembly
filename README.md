@@ -8,11 +8,13 @@ Currently, this extension supports the following assemblers. In general, the gra
 - [vasm][vsm]
     - `vasmm68k_mot`: [Mot Syntax Module][vasmmot], the grammar is called "68k Assembly (vasmm68k_mot)"
     - `vasmm68k_std`: [Standard Syntax Module][vasmstd], the grammar is called "68k Assembly (vasmm68k_std)"
+- [NXP ColdFire/CodeWarior][coldfire]
+    - `CodeWarrior`: The grammar is called "Coldfire 68k Assembly (CodeWarrior)"
 
 Planned support for:
-- m68k-elf-as 
+- m68k-elf-as
 - SNASM2
-- Sierra 68000 Assembler 
+- Sierra 68000 Assembler
 
 This is not a complete list. If you have a wish or suggestion, please use the [issue function][iss] of the GitHub repository to submit an assembler. If you provide a link to its documentation, that will speed things up.
 
@@ -55,3 +57,4 @@ Initial release. Only supports [vasm][vsm].
 [vsc]: https://code.visualstudio.com
 [mot]: https://en.wikipedia.org/wiki/Motorola_68000
 [iss]: https://github.com/georgjz/motorola-68k-assembly/issues
+[coldfire]: https://www.nxp.com/products/processors-and-microcontrollers/legacy-mcu-mpus/32-bit-coldfire-mcus-mpus:PC68KCF

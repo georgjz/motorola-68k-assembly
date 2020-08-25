@@ -2,8 +2,13 @@
 
 ## [Unreleased]
 
-## [0.2.8] - 2020-Jan-07 
-### Fixed 
+## [0.3.0] - 2020-Aug-25
+### Added
+- NXP ColdFire/CodeWarrior now supported
+### Fixed
+
+## [0.2.8] - 2020-Jan-07
+### Fixed
 - Issue #1; register names in the vasm grammars are now highlighted case-insensitively
 
 ## [0.2.7] - 2020-Jan-07 

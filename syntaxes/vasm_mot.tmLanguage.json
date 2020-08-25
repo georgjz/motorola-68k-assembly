@@ -30,7 +30,7 @@
       "patterns": [
       {
         "name": "entity.name.function.label.vasmmot",
-        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
+        "match": "^\\@?[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
       },
       {
         "name": "constant.numeric.hex.vasmmot",

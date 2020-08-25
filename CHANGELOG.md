@@ -6,6 +6,10 @@
 ### Added
 - NXP ColdFire/CodeWarrior now supported
 ### Fixed
+- Issue #3; hexadecimal numbers parsed correctly now
+- Issue #4; local labels prefixed `@` work now
+- Issue #5; fixed scope issues with the vasm grammars
+- Issue #6; binary numbers prefixed with `-` are no longer a thing
 
 ## [0.2.8] - 2020-Jan-07
 ### Fixed

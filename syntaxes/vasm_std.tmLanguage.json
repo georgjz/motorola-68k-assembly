@@ -10,17 +10,17 @@
   "repository": {
     "comments":
     {
-      "name": "comment.line.vasmmot",
+      "name": "comment.line.vasmstd",
       "match": "[;\\#].*$"
     },
     "strings": 
     {
-			"name": "string.quoted.double.vasmmot",
+			"name": "string.quoted.double.vasmstd",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.vasmmot",
+					"name": "constant.character.escape.vasmstd",
 					"match": "\\\\."
 				}
 			]
@@ -30,7 +30,7 @@
       "patterns": [
       {
         "name": "entity.name.function.label.vasmstd",
-        "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=\\:)"
+        "match": "^\\@?[A-Za-z\\._][A-Za-z0-9\\._]*(?=\\:)"
       },
       {
         "name": "entity.name.function.label.vasmstd",

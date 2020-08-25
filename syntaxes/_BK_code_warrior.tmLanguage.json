@@ -1,0 +1,78 @@
+{
+  "name": "NXP CodeWarrior",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#symbols" },
+    { "include": "#operators" },
+    { "include": "#directives" }
+  ],
+  "repository": {
+    "comments": 
+    {
+      "name": "comment.line.codewarrior",
+      "match": "[\\;\\#\\*(\\-\\-)(\\/\\/)].*$"
+    },
+    "strings": 
+    {
+			"name": "string.quoted.double.codewarrior",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.codewarrior",
+					"match": "\\\\."
+				}
+			]
+    },
+    "symbols": 
+    { 
+      "patterns": [
+        {
+          "name": "entity.name.function.label.codewarrior",
+          "match": "^[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
+        },
+        {
+          "name": "constant.numeric.hex.codewarrior",
+          "match": "\\-?\\$\\b[a-fA-F0-9]+\\b"
+        },
+        {
+          "name": "constant.numeric.hex.codewarrior",
+          "match": "\\-?\\b(?i)0x[a-fA-F0-9]+\\b"
+        },
+        {
+          "name": "constant.numeric.binary.codewarrior",
+          "match": "\\-?\\%[01]+"
+        },
+        {
+          "name": "constant.numeric.octal.codewarrior",
+          "match": "\\-?\\@[0-7]+"
+        },
+        {
+          "name": "constant.numeric.decimal.codewarrior",
+          "match": "\\b[0-9]+\\b"
+        },
+        {
+          "name": "variable.language.register.codewarrior",
+          "match": "\\b([da][0-7]|u?sp|ccr|pc|sr)\\b"
+        }
+      ]
+    },
+    "operators":
+    {
+
+    },
+    "directives": 
+    {
+      "patterns": [
+      {
+      },
+      {
+      },
+      {
+      }
+      ]
+    }
+  },
+  "scopeName": "source.codewarrior"
+}

@@ -42,13 +42,13 @@
       {
         "id": "codewarrior",
         "aliases": [
-          "ColdFire Assembly (CodeWarrior)"
+          "ColdFire 68k Assembly (CodeWarrior)"
         ],
         "extensions": [
           ".s",
           ".asm"
         ],
-        "configuration": "./configs/vasm-mot-language-configuration.json"
+        "configuration": "./configs/codewarrior-language-configuration.json"
       }
     ],
     "grammars": [
@@ -72,15 +72,7 @@
         "path": "./syntaxes/68000opcodes.tmLanguage.json",
         "injectTo": [
           "source.vasmmot",
-          "source.vasmstd",
-          "source.codewarrior"
-        ]
-      },
-      {
-        "scopeName": "opcodes.coldfire",
-        "path": "./syntaxes/coldfireopcodes.tmLanguage.json",
-        "injectTo": [
-          "source.codewarrior"
+          "source.vasmstd"
         ]
       },
       {

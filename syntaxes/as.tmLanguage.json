@@ -1,5 +1,5 @@
 {
-  "name": "vasm Motorola syntax",
+  "name": "The Macroassembler AS",
   "patterns": [
     { "include": "#comments" },
     { "include": "#strings" },
@@ -10,72 +10,87 @@
   "repository": {
     "comments":
     {
-      "name": "comment.line.vasmmot",
-      "match": "[;\\*].*$"
+      "name": "comment.line.as",
+      "match": "\\;.*$"
     },
     "strings": 
     {
-			"name": "string.quoted.double.vasmmot",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
+      "patterns": [
+      {
+			  "name": "string.quoted.double.as",
+			  "begin": "\"",
+			  "end": "\"",
+			  "patterns": [
 				{
-					"name": "constant.character.escape.vasmmot",
+					"name": "constant.character.escape.as",
 					"match": "\\\\."
-				}
-			]
+        }
+      ]
+      },
+      {
+			  "name": "string.quoted.single.as",
+			  "begin": "'",
+			  "end": "'",
+			  "patterns": [
+				{
+					"name": "constant.character.escape.as",
+					"match": "\\\\."
+        }
+      ]
+      }
+    ]
 		},
     "symbols": 
     { 
       "patterns": [
       {
-        "name": "entity.name.function.label.vasmmot",
+        "name": "entity.name.function.label.as",
         "match": "^\\@?[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
       },
       {
-        "name": "constant.numeric.hex.vasmmot",
+        "name": "constant.numeric.hex.as",
         "match": "\\-?\\$\\b[a-fA-F0-9]+\\b"
       },
       {
-        "name": "constant.numeric.binary.vasmmot",
+        "name": "constant.numeric.binary.as",
         "match": "\\%[01]+"
       },
       {
-        "name": "constant.numeric.octal.vasmmot",
+        "name": "constant.numeric.octal.as",
         "match": "\\-?\\@[0-7]+"
       },
       {
-        "name": "constant.numeric.decimal.vasmmot",
+        "name": "constant.numeric.decimal.as",
         "match": "\\b[0-9]+\\b"
       },
       {
-        "name": "variable.language.register.vasmmot",
+        "name": "variable.language.register.as",
         "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
       }
       ]
     },
     "operators":
     {
-      "name": "keyword.operator.vasmmot",
+      "name": "keyword.operator.as",
       "match":  "!|&|&&|\\^|\\*|\\/{1,2}|\\-|\\+|~|=(\\.[sdxp])?|<=|>=|<<|>>|<>|<|>|\\||\\|\\|"
     },
     "directives": 
     {
       "patterns": [
       {
-        "name": "support.function.pseudo.vasmmot",
+        "name": "support.function.pseudo.as",
         "match": "\\b(?i)(idnt|align|(d[srx]|dcb?|blk)\\.[bdlqswx]|(data|code|bss)(\\_[cf])?|cargs|clr[fs]o|cnop|comm|comment|[cd]seg|(f)?equ(\\.[sdxp])?|end(r)?|erem|even|fail|inc(bin|dir|lude)|inline|list|llen|nolist|nref|nopage|odd|offset|org|output|page|plen|print[tv]|public|rem|rept|rorg|rsreset|rs\\.|rsset|section|set([fs]o)?|so\\.|spc|text|ttl|weak|xdef|xref)\\b"
       },
       {
-        "name": "keyword.control.conditional.vasmmot",
+        "name": "keyword.control.conditional.as",
         "match": "\\b(?i)(else|endif|if(eq|ne|gt|ge|lt)|(n)?[bcd]|ifmacro(n)?d|iff)\\b"
       },
       {
-        "name": "support.function.pseudo.vasmmot",
+        "name": "support.function.pseudo.as",
         "match": "\\b(?i)(macro|endm|mexit)\\b"
       }
       ]
     }
   },
-  "scopeName": "source.vasmmot"
+  "scopeName": "source.as"
 }

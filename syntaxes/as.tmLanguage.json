@@ -45,7 +45,7 @@
       "patterns": [
       {
         "name": "entity.name.function.label.as",
-        "match": "^\\($$)?[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
+        "match": "^(\\$\\$)?[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
       },
       {
         "name": "constant.numeric.hex.as",
@@ -87,7 +87,7 @@
       },
       {
         "name": "support.function.pseudo.as",
-    "match": "\\b(?i)(macro|endm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function)\\b"
+        "match": "\\b(?i)(macro|endm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function)\\b"
       }
       ]
     }

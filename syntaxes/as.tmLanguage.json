@@ -45,7 +45,7 @@
       "patterns": [
       {
         "name": "entity.name.function.label.as",
-        "match": "^\\@?[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
+        "match": "^\\($$)?[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
       },
       {
         "name": "constant.numeric.hex.as",
@@ -58,10 +58,6 @@
       {
         "name": "constant.numeric.octal.as",
         "match": "\\-?\\@[0-7]+"
-      },
-      {
-        "name": "constant.numeric.decimal.as",
-        "match": "\\b[0-9]+\\b"
       },
       {
         "name": "variable.language.register.as",
@@ -79,7 +75,11 @@
       "patterns": [
       {
         "name": "support.function.pseudo.as",
-        "match": "\\b(?i)(idnt|align|(d[srx]|dcb?|blk)\\.[bdlqswx]|(data|code|bss)(\\_[cf])?|cargs|clr[fs]o|cnop|comm|comment|[cd]seg|(f)?equ(\\.[sdxp])?|end(r)?|erem|even|fail|inc(bin|dir|lude)|inline|list|llen|nolist|nref|nopage|odd|offset|org|output|page|plen|print[tv]|public|rem|rept|rorg|rsreset|rs\\.|rsset|section|set([fs]o)?|so\\.|spc|text|ttl|weak|xdef|xref)\\b"
+        "match": "\\b(?i)(sqrt|a?sin|a?cos|a?tan|a?cot|a?sin|exp|alog|ald|a?sinh|a?cosh|a?tanh|a?coth|ln|log|ld|int|bitcnt|firstbit|lastbit|bitpos|sgn|abs|toupper|tolower|upstring|lowstring|strlen|substr|charformstr|strstr|val|exprtype)\\b"
+      },
+      {
+        "name": "support.function.pseudo.as",
+        "match": "\\b(?i)(set|equ|sfrb?|label|(name)?reg|charset|codepage|(next)?enum|enumconf|pushv|popv|r?org|cpu|supmode|fpu|pmmu|fullpmmu|padding|segment|(de)?phase|save|restore|(end)?expect|d[cs](\\.[bwlqsdxp])?|align)\\b"
       },
       {
         "name": "keyword.control.conditional.as",
@@ -87,7 +87,7 @@
       },
       {
         "name": "support.function.pseudo.as",
-        "match": "\\b(?i)(macro|endm|mexit)\\b"
+    "match": "\\b(?i)(macro|endm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function)\\b"
       }
       ]
     }

@@ -79,15 +79,15 @@
       },
       {
         "name": "support.function.pseudo.as",
-        "match": "\\b(?i)(set|equ|sfrb?|label|(name)?reg|charset|codepage|(next)?enum|enumconf|pushv|popv|r?org|cpu|supmode|fpu|pmmu|fullpmmu|padding|segment|(de)?phase|save|restore|(end)?expect|d[cs](\\.[bwlqsdxp])?|align)\\b"
+        "match": "\\b(?i)(set|equ|sfrb?|label|(name)?reg|charset|(code|new)?page|(next)?enum|enumconf|pushv|popv|r?org|cpu|supmode|fpu|pmmu|fullpmmu|padding|segment|(de)?phase|save|restore|(end)?expect|d[cs](\\.[bwlqsdxp])?|align|(end)?struct|noextnames|dots|listing|prtinit|prtexit|title|radix|outradix|section|endsection|public|global|forward|shared|include|binclude|message|warning|error|fatal|read|relaxed|end)\\b"
       },
       {
         "name": "keyword.control.conditional.as",
-        "match": "\\b(?i)(else|endif|if(eq|ne|gt|ge|lt)|(n)?[bcd]|ifmacro(n)?d|iff)\\b"
+        "match": "\\b(?i)(else(if)?|endif|if(n?(def|used|exist|b))?|switch|case|elsecase|endcase)\\b"
       },
       {
         "name": "support.function.pseudo.as",
-        "match": "\\b(?i)(macro|endm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function)\\b"
+        "match": "\\b(?i)(macro|endm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function|macexp_dft|macexp_ovr)\\b"
       }
       ]
     }

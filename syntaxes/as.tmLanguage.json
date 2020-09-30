@@ -1,0 +1,96 @@
+{
+  "name": "The Macroassembler AS",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#symbols" },
+    { "include": "#operators" },
+    { "include": "#directives" }
+  ],
+  "repository": {
+    "comments":
+    {
+      "name": "comment.line.as",
+      "match": "\\;.*$"
+    },
+    "strings": 
+    {
+      "patterns": [
+      {
+			  "name": "string.quoted.double.as",
+			  "begin": "\"",
+			  "end": "\"",
+			  "patterns": [
+				{
+					"name": "constant.character.escape.as",
+					"match": "\\\\."
+        }
+      ]
+      },
+      {
+			  "name": "string.quoted.single.as",
+			  "begin": "'",
+			  "end": "'",
+			  "patterns": [
+				{
+					"name": "constant.character.escape.as",
+					"match": "\\\\."
+        }
+      ]
+      }
+    ]
+		},
+    "symbols": 
+    { 
+      "patterns": [
+      {
+        "name": "entity.name.function.label.as",
+        "match": "^(\\$\\$)?[A-Za-z\\._][A-Za-z0-9\\._]*(?=(\\$|\\:{0,2}))"
+      },
+      {
+        "name": "constant.numeric.hex.as",
+        "match": "\\-?\\$\\b[a-fA-F0-9]+\\b"
+      },
+      {
+        "name": "constant.numeric.binary.as",
+        "match": "\\%[01]+"
+      },
+      {
+        "name": "constant.numeric.octal.as",
+        "match": "\\-?\\@[0-7]+"
+      },
+      {
+        "name": "variable.language.register.as",
+        "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
+      }
+      ]
+    },
+    "operators":
+    {
+      "name": "keyword.operator.as",
+      "match":  "!|&|&&|\\^|\\*|\\/{1,2}|\\-|\\+|~|=(\\.[sdxp])?|<=|>=|<<|>>|<>|<|>|\\||\\|\\|"
+    },
+    "directives": 
+    {
+      "patterns": [
+      {
+        "name": "support.function.pseudo.as",
+        "match": "\\b(?i)(sqrt|a?sin|a?cos|a?tan|a?cot|a?sin|exp|alog|ald|a?sinh|a?cosh|a?tanh|a?coth|ln|log|ld|int|bitcnt|firstbit|lastbit|bitpos|sgn|abs|toupper|tolower|upstring|lowstring|strlen|substr|charformstr|strstr|val|exprtype)\\b"
+      },
+      {
+        "name": "support.function.pseudo.as",
+        "match": "\\b(?i)(set|equ|sfrb?|label|(name)?reg|charset|(code|new)?page|(next)?enum|enumconf|pushv|popv|r?org|cpu|supmode|fpu|pmmu|fullpmmu|padding|segment|(de)?phase|save|restore|(end)?expect|d[cs](\\.[bwlqsdxp])?|align|(end)?struct|noextnames|dots|listing|prtinit|prtexit|title|radix|outradix|section|endsection|public|global|forward|shared|include|binclude|message|warning|error|fatal|read|relaxed|end)\\b"
+      },
+      {
+        "name": "keyword.control.conditional.as",
+        "match": "\\b(?i)(else(if)?|endif|if(n?(def|used|exist|b))?|switch|case|elsecase|endcase)\\b"
+      },
+      {
+        "name": "support.function.pseudo.as",
+        "match": "\\b(?i)(macro|endm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function|macexp_dft|macexp_ovr)\\b"
+      }
+      ]
+    }
+  },
+  "scopeName": "source.as"
+}

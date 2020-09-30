@@ -18,6 +18,17 @@
   "contributes": {
     "languages": [
       {
+        "id": "as",
+        "aliases": [
+          "The Macroassembler AS (as)"
+        ],
+        "extensions": [
+          ".s",
+          ".asm"
+        ],
+        "configuration": "./configs/as-language-configuration.json"
+      },
+      {
         "id": "vasmmot",
         "aliases": [
           "68k Assembly (vasmm68k_mot)"
@@ -53,6 +64,11 @@
     ],
     "grammars": [
       {
+        "language": "as",
+        "scopeName": "source.as",
+        "path": "./syntaxes/as.tmLanguage.json"
+      },
+      {
         "language": "vasmmot",
         "scopeName": "source.vasmmot",
         "path": "./syntaxes/vasm_mot.tmLanguage.json"
@@ -73,7 +89,8 @@
         "injectTo": [
           "source.vasmmot",
           "source.vasmstd",
-          "source.codewarrior"
+          "source.codewarrior",
+          "source.as"
         ]
       },
       {

@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+## [0.4.0] - 2020-Oct-03
+### Added
+- The Macroassembler AS now supported
+### Fixed
+- Small inconsistency with file naming
+
+- Issue #3; hexadecimal numbers parsed correctly now
 ## [0.3.0] - 2020-Aug-25
 ### Added
 - NXP ColdFire/CodeWarrior now supported

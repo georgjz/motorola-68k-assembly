@@ -87,7 +87,7 @@
       },
       {
         "name": "support.function.pseudo.as",
-        "match": "\\b(?i)(macro|endm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function|macexp_dft|macexp_ovr)\\b"
+        "match": "\\b(?i)(macro|endm|exitm|(no)?(expand|expif|expmacro|prest|public|global|export|intlabel|globalsymbols)|irpc?|rept|while|shift|maxnest|function|macexp_dft|macexp_ovr)\\b"
       }
       ]
     }

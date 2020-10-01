@@ -66,6 +66,10 @@
       {
         "name": "variable.language.register.as",
         "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
+      },
+      {
+        "name": "variable.language.register.as",
+        "match": "\\b(?i)(?<=[da][0-7]\\.)[wl]\\b"
       }
       ]
     },

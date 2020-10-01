@@ -47,10 +47,6 @@
       {
         "name": "constant.numeric.decimal.vasmmot",
         "match": "\\b[0-9]+\\b"
-      },
-      {
-        "name": "variable.language.register.vasmmot",
-        "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
       }
       ]
     },

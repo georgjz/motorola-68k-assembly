@@ -40,6 +40,10 @@ If you find a bug or error, please submit an [issue][iss] to this repository. A 
 
 For more detailed changes, see `CHANGELOG.md`.
 
+### 0.4.2
+
+Address size specifiers after symbols/labels and registers are highlighted now.
+
 ### 0.4.1
 
 Bunch of small bug fixes.

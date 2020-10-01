@@ -55,10 +55,6 @@
       {
         "name": "constant.numeric.decimal.vasmstd",
         "match": "\\b[0-9]+\\b"
-      },
-      {
-        "name": "variable.language.register.vasmstd",
-        "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
       }
       ]
     },

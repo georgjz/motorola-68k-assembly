@@ -47,6 +47,14 @@
         {
           "name": "keyword.mnemonic.68000.m68000",
           "match": "\\b(?i)((e)?or(i)?|and(i)?|sub([iqx])?|add([iqx])?|cmp([mi])?|move|negx|clr|neg|not|tst|or|(as|ls|rox|ro)[lr])(\\.[bwl])?\\b"
+        },      
+        {
+          "name": "variable.language.register.as",
+          "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
+        },
+        {
+          "name": "variable.language.register.as",
+          "match": "\\b(?i)(?<=[da][0-7]\\.)[wl]\\b"
         }
         ]
     }

@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.4.2] - 2020-Oct-01
+### Fixed 
+- Issue #14: Add highlighting for address size modifiers
+
 ## [0.4.1] - 2020-Oct-01
 ### Fixed 
 - Issue #15: Add a few missing instructions to all syntaxes 

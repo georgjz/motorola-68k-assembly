@@ -6,6 +6,7 @@
 ### Fixed 
 - Issue #15: Add a few missing instructions to all syntaxes 
 - Issue #16: `exitm` now highlighted correctly
+- Issue #18: `:=` now highlighted correctly
 - Issue #10: Branch instructions ending with `.s` now highlighted correctly
 
 ## [0.4.0] - 2020-Oct-01

@@ -8,10 +8,10 @@ Currently, this extension supports the following assemblers. In general, the gra
 
 - [AS, The Macroassembler][as], the grammar is called "The Macroassembler AS (as)"
 - [NXP ColdFire/CodeWarrior][coldfire]
-    - `CodeWarrior`: The grammar is called "Coldfire 68k Assembly (CodeWarrior)"
+  - `CodeWarrior`: The grammar is called "Coldfire 68k Assembly (CodeWarrior)"
 - [vasm][vsm]
-    - `vasmm68k_mot`: [Mot Syntax Module][vasmmot], the grammar is called "68k Assembly (vasmm68k_mot)"
-    - `vasmm68k_std`: [Standard Syntax Module][vasmstd], the grammar is called "68k Assembly (vasmm68k_std)"
+  - `vasmm68k_mot`: [Mot Syntax Module][vasmmot], the grammar is called "68k Assembly (vasmm68k_mot)"
+  - `vasmm68k_std`: [Standard Syntax Module][vasmstd], the grammar is called "68k Assembly (vasmm68k_std)"
 
 Planned support for:
 
@@ -32,7 +32,7 @@ Please feel free to submit an [issue][iss] to make a suggestion. They're greatly
 
 ## Known Issues / Bugs
 
-- Grammars that uses `*` to mark comments: Arithmetic expressions (e.g., `4 + 6 * 8`), that include `*` as an operator, are wrongly marked as comments. 
+- Grammars that uses `*` to mark comments: Arithmetic expressions (e.g., `4 + 6 * 8`), that include `*` as an operator, are wrongly marked as comments.
 
 If you find a bug or error, please submit an [issue][iss] to this repository. A screenshot and informations about your system (OS, VS code version) will help a lot.
 

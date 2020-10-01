@@ -2,7 +2,15 @@
 
 ## [Unreleased]
 
-## [0.4.0] - 2020-Oct-03
+## [0.4.1] - 2020-Oct-01
+### Fixed 
+- Issue #15: Add a few missing instructions to all syntaxes 
+- Issue #16: `exitm` now highlighted correctly
+- Issue #18: `:=` now highlighted correctly
+- Issue #10: Branch instructions ending with `.s` now highlighted correctly
+- Issue #11: Decimal numbers now highlighted
+
+## [0.4.0] - 2020-Oct-01
 ### Added
 - The Macroassembler AS now supported
 ### Fixed

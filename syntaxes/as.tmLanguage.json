@@ -60,6 +60,10 @@
         "match": "\\-?\\@[0-7]+"
       },
       {
+        "name": "constant.numeric.decimal.vasmmot",
+        "match": "\\b[0-9]+\\b"
+      },
+      {
         "name": "variable.language.register.as",
         "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
       }

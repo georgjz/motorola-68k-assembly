@@ -26,7 +26,7 @@
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(d?b(ra|sr))(\\.[bw])?\\b"
+          "match": "\\b(?i)(d?b(ra|sr))(\\.[bws])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",

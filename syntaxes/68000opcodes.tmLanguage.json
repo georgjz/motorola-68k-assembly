@@ -30,7 +30,7 @@
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[bws])?\\b"
+          "match": "\\b(?i)(d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le|hs|lo|chg|shs|slo))(\\.[bws])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
@@ -38,7 +38,7 @@
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext)(\\.[wl])?\\b"
+          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext|divu)(\\.[wl])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",

@@ -56,6 +56,14 @@
       {
         "name": "constant.numeric.decimal.codewarrior",
         "match": "\\-?\\b[0-9]+d?\\b"
+      },
+      {
+        "name": "variable.language.register.codewarrior",
+        "match": "\\b(?i)([da][0-7]|u?sp|ccr|pc|sr)\\b"
+      },
+      {
+        "name": "variable.language.register.codewarrior",
+        "match": "\\b(?i)(?<=[da][0-7]\\.)[wl]\\b"
       }
       ]
     },

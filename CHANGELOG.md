@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.4.3] - 2020-Oct-03
+### Fixed 
+- Issue #21: Reverted changes that made register names in strings highlighted
+
 ## [0.4.2] - 2020-Oct-01
 ### Fixed 
 - Issue #14: Add highlighting for address size modifiers

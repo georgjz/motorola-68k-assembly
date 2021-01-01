@@ -2,6 +2,15 @@
 
 ## [Unreleased]
 
+## [0.4.7] - 2021-Jan-01
+Fixed issues with vsce.
+
+## [0.4.6] - 2021-Jan-01
+Dummy
+
+## [0.4.5] - 2021-Jan-01
+Dummy
+
 ## [0.4.4] - 2021-Jan-01
 ### Fixed 
 - Issues #23: Immediate operands prefixed with `#` are no longer wrongly marked as comments

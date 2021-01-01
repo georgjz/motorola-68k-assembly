@@ -1,14 +1,29 @@
 {
   "name": "NXP CodeWarrior",
   "patterns": [
+    { "include": "#immediateexpr" },
     { "include": "#comments" },
-    { "include": "#strings" },
     { "include": "#symbols" },
-    { "include": "#operators" },
     { "include": "#directives" },
+    { "include": "#operators" },
     { "include": "#mnemonics" }
   ],
   "repository": {
+    "immediateexpr":
+    {
+      "begin": "\\#(?=[^\\s])",
+      "end": "[\\,\\s]",
+      "beginCaptures": 
+      {
+        "0": { "name": "immediateexpr.begin.codewarrior" }
+      },
+      "endCaptures":
+      {
+        "0": { "name": "immediateexpr.end.codewarrior" }
+      },
+      "name": "expression.group",
+      "patterns": [{ "include": "#symbols" }]
+    },
     "comments":
     {
       "name": "comment.line.codewarrior",

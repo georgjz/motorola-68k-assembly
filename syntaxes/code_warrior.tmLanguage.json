@@ -27,7 +27,7 @@
     "comments":
     {
       "name": "comment.line.codewarrior",
-      "match": "[\\;\\#\\*(\\-\\-)(\\/\\/)].*$"
+      "match": "([\\;\\#\\*]|(\\-\\-)|(\\/\\/)).*$"
     },
     "strings": 
     {

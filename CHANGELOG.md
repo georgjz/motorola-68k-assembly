@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [0.4.4] - 2021-Jan-01
+### Fixed 
+- Issues #23: Immediate operands prefixed with `#` are no longer wrongly marked as comments
+- Issues #24: Indirect operands within parentheses are no longer wrongly marked as comments
+
 ## [0.4.3] - 2020-Oct-03
 ### Fixed 
 - Issue #21: Reverted changes that made register names in strings highlighted

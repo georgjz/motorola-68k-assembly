@@ -40,6 +40,10 @@ If you find a bug or error, please submit an [issue][iss] to this repository. A 
 
 For more detailed changes, see `CHANGELOG.md`.
 
+### 0.4.4
+
+Minor bug fixes.
+
 ### 0.4.3
 
 Minor bug fix.

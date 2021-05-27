@@ -18,7 +18,7 @@
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(abcd|nbcd|tas|s(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[b])?\\b"
+          "match": "\\b(?i)([ans]bcd|tas|s(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[b])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
@@ -34,15 +34,15 @@
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le|hs|lo|chg|shs|slo))(\\.[bws])?\\b"
+          "match": "\\b(?i)((d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le|hs|lo))|shs|slo)(\\.[bws])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(b(tst|bchg|clr|set))(\\.[bl])?\\b"
+          "match": "\\b(?i)(b(tst|chg|clr|set))(\\.[bl])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext|divu)(\\.[wl])?\\b"
+          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext|div[su])(\\.[wl])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",

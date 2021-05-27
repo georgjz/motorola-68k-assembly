@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.4.8] - 2021-May-27
+### Fixed 
+- Issues #26: Some missing mnemonics are not highlighted.
+
 ## [0.4.7] - 2021-Jan-01
 Fixed issues with vsce.
 

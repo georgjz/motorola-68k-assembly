@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+## [0.4.9] - 2026-July-14
+- Minor updates to make sure the tooling still works, since I haven't touched this since 2021. 
+
 ## [0.4.8] - 2021-May-27
 ### Fixed 
 - Issues #26: Some missing mnemonics are not highlighted.

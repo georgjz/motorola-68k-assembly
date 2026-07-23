@@ -18,35 +18,35 @@
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)([ans]bcd|tas|s(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.[b])?\\b"
+          "match": "\\b(?i)([ans]bcd|tas|s(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le))(\\.?[b])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(link|swap|chk|(di|mul)[su])(\\.[w])?\\b"
+          "match": "\\b(?i)(link|swap|chk|(di|mul)[su])(\\.?[w])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)([lp]ea|moveq|exg)(\\.[l])?\\b"
+          "match": "\\b(?i)([lp]ea|moveq|exg)(\\.?[l])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(d?b(ra|sr))(\\.[bws])?\\b"
+          "match": "\\b(?i)(d?b(ra|sr))(\\.?[bws])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)((d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le|hs|lo))|shs|slo)(\\.[bws])?\\b"
+          "match": "\\b(?i)((d?b(t|f|hi|ls|cc|cs|ne|eq|vc|vs|pl|mi|ge|lt|gt|le|hs|lo))|shs|slo)(\\.?[bws])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(b(tst|chg|clr|set))(\\.[bl])?\\b"
+          "match": "\\b(?i)(b(tst|chg|clr|set))(\\.?[bl])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext|div[su])(\\.[wl])?\\b"
+          "match": "\\b(?i)(cmpa|move[apm]|adda|suba|ext|div[su])(\\.?[wl])?\\b"
         },
         {
           "name": "keyword.mnemonic.68000.m68000",
-          "match": "\\b(?i)((e)?or(i)?|and(i)?|sub([iqx])?|add([iqx])?|cmp([mi])?|move|negx|clr|neg|not|tst|or|(as|ls|rox|ro)[lr])(\\.[bwl])?\\b"
+          "match": "\\b(?i)((e)?or(i)?|and(i)?|sub([iqx])?|add([iqx])?|cmp([mi])?|move|negx|clr|neg|not|tst|or|(as|ls|rox|ro)[lr])(\\.?[bwl])?\\b"
         }      
         ]
     }

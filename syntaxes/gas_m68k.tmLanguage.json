@@ -1,0 +1,138 @@
+{
+  "name": "GNU as m68k syntax",
+  "patterns": [
+    { "include": "#comments" },
+    { "include": "#strings" },
+    { "include": "#symbols" },
+    { "include": "#operators" },
+    { "include": "#directives" }
+  ],
+  "repository": {
+    "comments":
+    {
+      "patterns": [
+      {
+        "name": "comment.ranged.gas-m68k",
+        "begin": "/\\*",
+        "end": "\\*/"
+      },
+      {
+        "name": "comment.line.gas-m68k",
+        "match": "\\|.*$"
+      },
+      {
+        "name": "comment.wholeline.gas-m68k",
+        "match": "^[\\*#].*$"
+      }
+      ]
+    },
+    "strings": 
+    {
+			"name": "string.quoted.double.gas-m68k",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gas-m68k",
+					"match": "\\\\."
+				}
+			]
+		},
+    "symbols": 
+    { 
+      "patterns": [
+      {
+        "name": "entity.name.function.label.gas-m68k",
+        "match": "^([0-9]|(.L|\\$)?[A-Za-z\\._][A-Za-z0-9\\._]*)(?=(\\$|\\:{0,2}))"
+      },
+      {
+        "name": "constant.numeric.hex.gas-m68k",
+        "match": "\\b(?i)0x[A-F0-9]+\\b"
+      },
+      {
+        "name": "constant.numeric.octal.gas-m68k",
+        "match": "\\-?0[1-7][0-7]*"
+      },
+      {
+        "name": "constant.numeric.decimal.gas-m68k",
+        "match": "\\b[0-9]+\\b"
+      },
+      {
+        "name": "constant.symbol.gas-m68k",
+        "match": "\\b([0-9][bf]|(.L|\\$)?[A-Za-z\\._][A-Za-z0-9\\._]*)"
+      },
+      {
+        "name": "variable.language.register.gas-m68k",
+        "match": "%([da][0-7]|u?sp|fp|ccr|pc|sr)"
+      },
+      {
+        "name": "variable.language.register.gas-m68k",
+        "match": "\\b([da][0-7])(:[wl])?\\b"
+      }
+      ]
+    },
+    "operators":
+    {
+      "name": "keyword.operator.gas-m68k",
+      "match":  "!|&|&&|\\^|\\*|\\/{1,2}|\\-|\\+|~|=(\\.[sdxp])?|<=|>=|<<|>>|<>|<|>"
+    },
+    "directives": 
+    {
+      "patterns": [
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(asci[iz]|base64|[248]?byte|dc(\\.[abdlswx])?|dcb(\\.[bdlswx])?|ds(\\.[bdlpswx])?|double|fill|float|hword|int|lcomm|long|nop|octa|quad|short|single|skip|sleb128|space|string(8|16)?|uleb128|word|zero)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(bss|data|popsection|previous|pushsection|section|struct|subsection|text)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(comm|def|endef|extern|global|hidden|internal|local|protected|scl|set|size|symver|tls_common|type|val|weak|weakref)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(desc|dim|stab[dns]|tag)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(align|balign[wl]|offset|org|p2align[wl]|reloc)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(equ|equiv|eqv)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(err|error|fail|print|warning)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(altmacro|file|gnu_attribute|line|linkonce|list|ln|loc|noaltmacro|nolist|psize|sbttl|title|version)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(eject|end|ident|lflags)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(irp|irpc|rept|endr)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(incbin|include)\\b"
+      },
+      {
+        "name": "support.function.pseudo.gas-m68k",
+        "match": "\\b\\.(macro|endm|exitm|func|endfunc)\\b"
+      },
+      {
+        "name": "keyword.control.conditional.gas-m68k",
+        "match": "\\b\\.(else|endif|(else)?if(def|n?b|n?c|eqs?|g[et]|l[et]|nes?|ndef|notdef))\\b"
+      }
+      ]
+    }
+  },
+  "scopeName": "source.gas-m68k"
+}

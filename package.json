@@ -29,6 +29,17 @@
         "configuration": "./configs/as-language-configuration.json"
       },
       {
+        "id": "gas-m68k",
+        "aliases": [
+          "68k Assembly (GNU AS)"
+        ],
+        "extensions": [
+          ".s",
+          ".asm"
+        ],
+        "configuration": "./configs/gas-m68k-language-configuration.json"
+      },
+      {
         "id": "vasmmot",
         "aliases": [
           "68k Assembly (vasmm68k_mot)"
@@ -69,6 +80,11 @@
         "path": "./syntaxes/as.tmLanguage.json"
       },
       {
+        "language": "gas-m68k",
+        "scopeName": "source.gas-m68k",
+        "path": "./syntaxes/gas_m68k.tmLanguage.json"
+      },
+      {
         "language": "vasmmot",
         "scopeName": "source.vasmmot",
         "path": "./syntaxes/vasm_mot.tmLanguage.json"
@@ -87,6 +103,7 @@
         "scopeName": "opcodes.m68000",
         "path": "./syntaxes/68000opcodes.tmLanguage.json",
         "injectTo": [
+          "source.gas-m68k",
           "source.vasmmot",
           "source.vasmstd",
           "source.codewarrior",
